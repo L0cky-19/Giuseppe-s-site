@@ -1,0 +1,301 @@
+{
+    "meta": {
+        "home": {
+            "title": "Giuseppe Barra – Hair & Beauty Luxury Monte-Carlo",
+            "description": "Salon de beauté luxury à Monte-Carlo. Coiffeur femme, homme, enfants, balayage, extensions, kératine, esthéticienne, massages et maquillage professionnel."
+        },
+        "balayage": {
+            "title": "Balayage Luxury à Monte-Carlo | Couleur Naturelle & Lumineuse – Barra Giuseppe",
+            "description": "Balayage luxury à Monte-Carlo avec techniques personnalisées et résultats naturels. Couleur élégante, lumineuse et durable. Réservez maintenant."
+        },
+        "extension": {
+            "title": "Extensions Luxury Great Lengths à Monte-Carlo – Barra Giuseppe",
+            "description": "Extensions Great Lengths à ultrasons à Monte-Carlo. Cheveux naturels, invisibles et personnalisés. Réservez maintenant."
+        },
+        "cheratina": {
+            "title": "Kératine Bio Lissante Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Kératine bio lissante luxury à Monte-Carlo. Cheveux lisses, soyeux et sains avec traitement naturel et durable. Réservez maintenant."
+        },
+        "donna": {
+            "title": "Coiffeur Femme Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Coiffeur femme luxury à Monte-Carlo. Coupe, couleur et soins personnalisés avec produits de haute qualité. Réservez maintenant."
+        },
+        "uomo": {
+            "title": "Coiffeur Homme Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Coiffeur homme luxury à Monte-Carlo. Coupe, barbe et styling personnalisé pour un look soigné et élégant. Réservez maintenant."
+        },
+        "bambini": {
+            "title": "Coiffeur Enfants à Monte-Carlo – Barra Giuseppe",
+            "description": "Coiffeur pour enfants à Monte-Carlo. Coupes délicates, rapides et amusantes dans un environnement sûr et accueillant. Réservez maintenant."
+        },
+        "barbiere": {
+            "title": "Barbier Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Barbier luxury à Monte-Carlo. Coupe homme, barbe, rasage et styling professionnel pour un look impeccable. Réservez maintenant."
+        },
+        "estetista": {
+            "title": "Esthéticienne Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Esthéticienne luxury à Monte-Carlo. Épilation, soins visage et corps, manucure et pédicure personnalisés. Réservez maintenant."
+        },
+        "massaggi": {
+            "title": "Massages Luxury à Monte-Carlo – Barra Giuseppe",
+            "description": "Massages luxury à Monte-Carlo. Relaxation, bien-être et soins exclusifs personnalisés pour le corps et l'esprit. Réservez maintenant."
+        },
+        "trucco": {
+            "title": "Maquillage Professionnel pour Événements à Monte-Carlo – Barra Giuseppe",
+            "description": "Maquillage professionnel pour événements à Monte-Carlo. Look élégant et durable pour galas, yachts et fêtes. Produits waterproof. Réservez maintenant."
+        }
+    },
+    "nav": {
+        "home": "Accueil",
+        "services": "Services",
+        "about": "À Propos",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "book": "Réserver"
+    },
+    "nav_services": {
+        "donna": "Coiffeur Femme",
+        "uomo": "Coiffeur Homme",
+        "bambini": "Coiffeur Enfants",
+        "barbiere": "Barbier",
+        "balayage": "Balayage Luxury",
+        "extension": "Extensions Great Lengths",
+        "cheratina": "Kératine Bio Lissante",
+        "estetista": "Esthéticienne",
+        "massaggi": "Massages",
+        "trucco": "Maquillage Professionnel"
+    },
+    "hero": {
+        "title": "Giuseppe Barra",
+        "subtitle": "Hair & Beauty Luxury",
+        "description": "Expérience exclusive de beauté au cœur de Monte-Carlo. Coiffeur, esthéticienne et maquilleur pour la clientèle la plus exigeante.",
+        "cta_book": "Réserver",
+        "cta_services": "Nos Services",
+        "scroll": "Découvrir"
+    },
+    "services_section": {
+        "label": "Nos Services",
+        "title": "L'Excellence de la Beauté",
+        "subtitle": "Services luxury personnalisés pour femmes, hommes et enfants au cœur de Monte-Carlo",
+        "discover": "En savoir plus"
+    },
+    "services": {
+        "donna": {
+            "title": "Coiffeur Femme Luxury",
+            "short": "Coupes modernes et classiques, couleurs personnalisées et soins sur mesure pour des cheveux lumineux et parfaitement soignés.",
+            "h1": "Coiffeur Femme Luxury à Monte-Carlo",
+            "intro": "Notre salon propose des services de coiffure femme luxury à Monte-Carlo, avec des coupes modernes et classiques, des couleurs personnalisées et des soins sur mesure. Chaque cliente bénéficie d'une consultation professionnelle, de produits de haute qualité et de techniques avancées pour des cheveux lumineux, sains et parfaitement soignés.",
+            "h2_why": "Pourquoi Choisir Notre Service",
+            "why_text": "Idéal pour celles qui recherchent un service élégant, exclusif et personnalisé dans la ville de Monte-Carlo. Chaque soin est étudié pour sublimer la beauté naturelle de la cliente, en respectant la structure et la santé du cheveu.",
+            "h2_services": "Nos Services pour Femmes",
+            "list_1": "Coupe femme personnalisée",
+            "list_2": "Couleur et mèches de haute qualité",
+            "list_3": "Soins restructurants et nourrissants",
+            "list_4": "Brushing et styling pour événements",
+            "list_5": "Consultation personnalisée sur le look",
+            "h2_experience": "Une Expérience Luxury à Monte-Carlo",
+            "experience_text": "Au salon Barra Giuseppe, chaque femme est accueillie dans un environnement élégant et discret. Notre philosophie est simple : écouter, conseiller et sublimer, avec des produits sélectionnés et des techniques de pointe."
+        },
+        "uomo": {
+            "title": "Coiffeur Homme Luxury",
+            "short": "Coupes classiques et modernes, rasage et styling professionnel pour un look soigné et élégant.",
+            "h1": "Coiffeur Homme Luxury à Monte-Carlo",
+            "intro": "Nous proposons des services de coiffure homme à Monte-Carlo, avec des coupes classiques et modernes, des rasages et un styling professionnel. Chaque soin est personnalisé pour garantir un look soigné, élégant et adapté au style de vie de la clientèle internationale.",
+            "h2_why": "Pourquoi Choisir Notre Service",
+            "why_text": "Parfait pour ceux qui désirent un service premium, rapide et de haute qualité. Notre équipe garantit précision, style et attention aux détails pour chaque client.",
+            "h2_services": "Nos Services pour Hommes",
+            "list_1": "Coupe homme classique et moderne",
+            "list_2": "Barbe et rasage professionnel",
+            "list_3": "Styling et grooming personnalisé",
+            "list_4": "Soins du cuir chevelu",
+            "list_5": "Conseil en image",
+            "h2_experience": "Style et Précision à Monte-Carlo",
+            "experience_text": "Le salon Barra Giuseppe est la référence pour l'homme qui recherche un look impeccable à Monte-Carlo. Techniques classiques et tendances modernes se rencontrent pour un résultat toujours élégant."
+        },
+        "bambini": {
+            "title": "Coiffeur Enfants",
+            "short": "Coupes délicates, rapides et amusantes dans un environnement sûr et accueillant pour les plus petits.",
+            "h1": "Coiffeur Enfants à Monte-Carlo",
+            "intro": "Service dédié aux plus petits, avec des coupes délicates, rapides et amusantes, dans un environnement sûr et accueillant. Chaque enfant reçoit une attention personnalisée pour une expérience positive et confortable.",
+            "h2_why": "Un Environnement Créé pour les Enfants",
+            "why_text": "Parfait pour les familles à la recherche d'un coiffeur luxury pour enfants à Monte-Carlo. Notre équipe est spécialisée pour rendre chaque coupe un moment agréable et serein.",
+            "h2_services": "Nos Services pour Enfants",
+            "list_1": "Coupe garçon et fille",
+            "list_2": "Coiffures pour occasions spéciales",
+            "list_3": "Première coupe de cheveux",
+            "list_4": "Environnement confortable et amusant",
+            "h2_experience": "Expérience Positive pour Toute la Famille",
+            "experience_text": "Au salon Barra Giuseppe, les enfants sont accueillis avec sourire et patience. Un service pensé pour rendre chaque visite un moment spécial."
+        },
+        "barbiere": {
+            "title": "Barbier Monte-Carlo",
+            "short": "Coupe homme, barbe, rasage et styling professionnel pour un look impeccable et raffiné.",
+            "h1": "Barbier Luxury à Monte-Carlo",
+            "intro": "Notre service de barbier à Monte-Carlo allie tradition et innovation. Coupe, barbe et rasage exécutés avec précision et produits de haute qualité.",
+            "h2_why": "L'Art du Barbier à Monte-Carlo",
+            "why_text": "Pour l'homme qui recherche une expérience de grooming premium, notre barbier propose des services classiques élevés au standard luxury de Monte-Carlo.",
+            "h2_services": "Nos Services Barbier",
+            "list_1": "Coupe homme classique et dégradé",
+            "list_2": "Barbe et moustache – sculpture et définition",
+            "list_3": "Rasage chaud avec serviettes chaudes",
+            "list_4": "Soin visage homme",
+            "list_5": "Styling avec produits premium",
+            "h2_experience": "Tradition et Style",
+            "experience_text": "Le barbier Barra Giuseppe offre une expérience raffinée, où tradition et modernité se fondent pour créer le look parfait."
+        },
+        "balayage": {
+            "title": "Balayage Luxury",
+            "short": "Nuances naturelles, élégantes et personnalisées pour une couleur lumineuse et durable.",
+            "h1": "Balayage Luxury à Monte-Carlo",
+            "intro": "Le balayage luxury à Monte-Carlo est un service exclusif conçu pour celles qui désirent une couleur raffinée, lumineuse et parfaitement harmonieuse. Au salon Barra Giuseppe, le balayage n'est pas un traitement standard, mais un travail sur mesure étudié pour sublimer le visage, le teint et la structure du cheveu.",
+            "h2_what": "Qu'est-ce que le Balayage Luxury",
+            "what_text": "Le balayage luxury est l'évolution du balayage traditionnel : une technique avancée qui crée des nuances naturelles, élégantes et sans démarcation. À la différence des couleurs classiques, le résultat est lumineux, tridimensionnel et durable, idéal pour celles qui recherchent un style sophistiqué typique de Monte-Carlo.",
+            "h2_personalized": "Balayage Luxury Personnalisé à Monte-Carlo",
+            "personalized_text": "Chaque balayage est réalisé après une consultation approfondie. Nous analysons :",
+            "personalized_list_1": "La couleur naturelle du cheveu",
+            "personalized_list_2": "Le teint de la peau",
+            "personalized_list_3": "Le style de vie",
+            "personalized_list_4": "Le résultat souhaité",
+            "personalized_after": "Cela nous permet de créer un balayage luxury personnalisé, élégant et toujours en harmonie avec votre image.",
+            "h2_why": "Pourquoi Choisir Notre Balayage Luxury",
+            "why_list_1": "Techniques avancées d'éclaircissement contrôlé",
+            "why_list_2": "Nuances naturelles sans effet racine",
+            "why_list_3": "Produits professionnels de haute qualité",
+            "why_list_4": "Cheveux lumineux, sains et soyeux",
+            "why_list_5": "Résultat élégant et durable",
+            "h2_types": "Balayage Luxury pour Chaque Type de Cheveu",
+            "types_text": "Le balayage luxury convient aux cheveux blonds, châtains ou foncés, lisses, ondulés ou bouclés, naturels ou déjà colorés. La technique est adaptée pour respecter la structure du cheveu et obtenir un résultat harmonieux et naturel.",
+            "h2_combo": "Associations Exclusives au Balayage Luxury",
+            "combo_text": "Pour un résultat impeccable, le balayage luxury peut être associé à :",
+            "combo_list_1": "Soins restructurants profonds",
+            "combo_list_2": "Gloss et tonifications personnalisées",
+            "combo_list_3": "Kératine lissante",
+            "combo_list_4": "Extensions capillaires",
+            "h2_international": "Pour une Clientèle Internationale",
+            "international_text": "Notre salon accueille des clients locaux et internationaux qui recherchent un balayage luxury à Monte-Carlo dans un environnement élégant, discret et professionnel. Nous proposons des consultations personnalisées et un service sur mesure, conforme aux standards d'excellence de la clientèle de Monaco."
+        },
+        "extension": {
+            "title": "Extensions Great Lengths",
+            "short": "Extensions à ultrasons légères, invisibles et naturelles pour une longueur et un volume parfaits.",
+            "h1": "Extensions Luxury Great Lengths à Monte-Carlo",
+            "intro": "Nous appliquons des extensions Great Lengths à ultrasons, légères, invisibles et naturelles, idéales pour augmenter la longueur et le volume des cheveux. Chaque soin est personnalisé selon le type de cheveu, la couleur et le style souhaité, garantissant un maximum de naturel, de confort et de durabilité.",
+            "h2_why": "Pourquoi Choisir les Extensions Great Lengths",
+            "why_text": "Parfait pour celles qui désirent un service luxury et sur mesure à Monte-Carlo. Les extensions Great Lengths sont réalisées avec des cheveux 100% naturels de très haute qualité.",
+            "h2_services": "Notre Méthode",
+            "list_1": "Application à ultrasons – zéro dommage",
+            "list_2": "Cheveux 100% naturels de haute qualité",
+            "list_3": "Personnalisation couleur et longueur",
+            "list_4": "Résultat invisible et naturel",
+            "list_5": "Entretien et réapplication",
+            "h2_experience": "Longueur et Volume Sans Compromis",
+            "experience_text": "Au salon Barra Giuseppe, les extensions sont un art. Chaque application est étudiée pour se fondre parfaitement avec les cheveux naturels, créant un résultat impeccable et durable."
+        },
+        "cheratina": {
+            "title": "Kératine Bio Lissante",
+            "short": "Cheveux lisses, soyeux et sains grâce à la kératine bio qui nourrit et discipline en respectant la santé.",
+            "h1": "Kératine Bio Lissante Luxury à Monte-Carlo",
+            "intro": "Notre kératine bio lissante luxury à Monte-Carlo nourrit et discipline les cheveux, en respectant leur santé. Elle réduit les frisottis, améliore la brillance et la douceur, garantissant un lissage naturel et durable, même en période estivale.",
+            "h2_why": "Pourquoi Choisir la Kératine Bio",
+            "why_text": "Idéal pour les clientes qui recherchent un traitement luxury, sûr et durable à Monte-Carlo. Notre formule bio respecte la structure du cheveu en le nourrissant en profondeur.",
+            "h2_services": "Bienfaits de la Kératine Bio Lissante",
+            "list_1": "Réduction des frisottis jusqu'à 95%",
+            "list_2": "Brillance et douceur durables",
+            "list_3": "Formule bio et sûre",
+            "list_4": "Résultat naturel et non rigide",
+            "list_5": "Durée jusqu'à 4-5 mois",
+            "h2_experience": "Lissage Parfait et Naturel",
+            "experience_text": "La kératine bio de Barra Giuseppe transforme les cheveux en les rendant soyeux, lumineux et faciles à coiffer. Un traitement luxury qui respecte la santé des cheveux."
+        },
+        "estetista": {
+            "title": "Esthéticienne Luxury",
+            "short": "Épilation, soins visage et corps, manucure et pédicure personnalisés pour des résultats visibles.",
+            "h1": "Esthéticienne Luxury à Monte-Carlo",
+            "intro": "Nous proposons des services d'esthétique professionnelle à Monte-Carlo, incluant épilation, soins visage et corps, manucure et pédicure. Chaque soin est personnalisé pour garantir des résultats visibles, du confort et du luxe.",
+            "h2_why": "Une Expérience Beauté Complète",
+            "why_text": "Parfait pour celles qui désirent une expérience beauté complète et raffinée. Notre équipe d'esthéticiennes professionnelles utilise des produits de haute qualité et des techniques avancées.",
+            "h2_services": "Nos Soins Esthétiques",
+            "list_1": "Épilation professionnelle",
+            "list_2": "Soins visage personnalisés",
+            "list_3": "Soins corps tonifiants et relaxants",
+            "list_4": "Manucure et pédicure luxury",
+            "list_5": "Soin des sourcils et des cils",
+            "h2_experience": "Beauté et Bien-être à Monte-Carlo",
+            "experience_text": "L'esthéticienne de Barra Giuseppe offre une expérience de beauté unique, où chaque soin est un moment de pur relaxation et de soin de soi."
+        },
+        "massaggi": {
+            "title": "Massages Luxury",
+            "short": "Massages professionnels et personnalisés pour détendre le corps et l'esprit dans un cadre exclusif.",
+            "h1": "Massages Luxury à Monte-Carlo",
+            "intro": "Service de massages professionnels et personnalisés, pour détendre le corps et l'esprit. Idéal pour ceux qui recherchent des expériences wellness luxury à Monte-Carlo, avec des soins exclusifs pour le stress, les tensions musculaires ou simplement la relaxation.",
+            "h2_why": "Bien-être Personnalisé",
+            "why_text": "Chaque massage est étudié selon les besoins individuels du client. Nous utilisons des techniques professionnelles et des produits de haute qualité pour garantir relaxation et bienfaits durables.",
+            "h2_services": "Nos Massages",
+            "list_1": "Massage relaxant corps entier",
+            "list_2": "Massage décontracturant",
+            "list_3": "Massage drainant",
+            "list_4": "Soins spécifiques stress et tensions",
+            "list_5": "Expérience wellness personnalisée",
+            "h2_experience": "Relaxation au Cœur de Monte-Carlo",
+            "experience_text": "Les massages luxury de Barra Giuseppe offrent une oasis de tranquillité au cœur de Monte-Carlo. Une expérience qui régénère le corps et l'esprit."
+        },
+        "trucco": {
+            "title": "Maquillage Professionnel pour Événements",
+            "short": "Maquillage élégant et durable pour galas, yachts et fêtes estivales avec produits waterproof.",
+            "h1": "Maquillage Professionnel pour Événements à Monte-Carlo",
+            "intro": "Notre maquillage professionnel pour événements à Monte-Carlo garantit un résultat élégant et durable, idéal pour les galas, les yachts et les fêtes estivales. Des produits waterproof et des techniques avancées assurent un look lumineux, sophistiqué et résistant à la chaleur, au soleil et à l'humidité, parfait pour les événements luxury et les environnements exclusifs.",
+            "h2_why": "Pourquoi Choisir Notre Maquillage",
+            "why_text": "Le maquillage professionnel de Barra Giuseppe est conçu pour résister aux conditions les plus exigeantes : du soleil méditerranéen aux soirées en yacht. Des résultats impeccables du matin au soir.",
+            "h2_services": "Nos Services Maquillage",
+            "list_1": "Maquillage pour événements et galas",
+            "list_2": "Maquillage mariée et cérémonies",
+            "list_3": "Look pour shootings photo",
+            "list_4": "Maquillage waterproof pour yachts et événements estivaux",
+            "list_5": "Consultation personnalisée couleur et style",
+            "h2_experience": "Look Parfait pour Chaque Occasion",
+            "experience_text": "Qu'il s'agisse d'un gala exclusif, d'un mariage ou d'une soirée en yacht, le maquillage de Barra Giuseppe assure un look impeccable et sophistiqué."
+        }
+    },
+    "about": {
+        "label": "À Propos",
+        "title": "L'Art de la Beauté à Monte-Carlo",
+        "p1": "Giuseppe Barra est un maître dans l'art du grooming et de la beauté, avec des années d'expérience au service de la clientèle la plus exigeante au cœur de la Principauté de Monaco.",
+        "p2": "Formé aux meilleures techniques de barbier traditionnel et moderne, Giuseppe allie savoir-faire artisanal et tendances contemporaines pour créer des looks élégants, uniques et personnalisés.",
+        "p3": "Chaque client bénéficie d'une attention personnalisée dans un environnement luxueux, conçu pour offrir relaxation et transformation.",
+        "cta": "Découvrir les Services"
+    },
+    "portfolio": {
+        "label": "Portfolio",
+        "title": "Nos Réalisations",
+        "subtitle": "Une sélection de nos meilleurs travaux pour la clientèle de Monte-Carlo"
+    },
+    "cta": {
+        "title": "Réservez Votre Rendez-vous",
+        "subtitle": "Expérience luxury à Monte-Carlo",
+        "text": "Découvrez le plaisir d'un service exclusif et personnalisé. Contactez-nous pour une consultation et réservez votre rendez-vous.",
+        "book_now": "Réserver",
+        "call": "Appelez-nous",
+        "whatsapp": "WhatsApp",
+        "yacht_text": "Disponible pour rendez-vous sur yacht 20h00–00h00"
+    },
+    "footer": {
+        "brand_text": "Salon de beauté luxury à Monte-Carlo. Coiffeur femme, homme, enfants, esthéticienne, massages et maquilleur professionnel.",
+        "col_services": "Services",
+        "col_info": "Informations",
+        "col_contact": "Contact",
+        "hours": "Tous les jours 8h00 – 20h00",
+        "yacht_hours": "Sur yacht : 20h00 – 00h00",
+        "address": "27 av. de la Costa, Galerie Park Palace, Monte-Carlo",
+        "rights": "Tous droits réservés."
+    },
+    "info_bar": {
+        "hours": "Tous les jours 8h00 – 20h00",
+        "yacht": "Yacht : sur rendez-vous 20h00 – 00h00",
+        "location": "Monte-Carlo, Monaco"
+    },
+    "service_page": {
+        "back": "Retour aux Services",
+        "related_title": "Services Associés",
+        "book_title": "Réserver Ce Service",
+        "book_text": "Contactez-nous pour une consultation personnalisée et découvrez le plaisir d'un service exclusif à Monte-Carlo."
+    }
+}

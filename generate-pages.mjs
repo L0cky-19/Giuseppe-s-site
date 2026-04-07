@@ -1,0 +1,366 @@
+// Generate all service pages from a template
+import { writeFileSync } from 'fs';
+
+const services = [
+    {
+        file: 'balayage-luxury-montecarlo.html',
+        key: 'balayage',
+        page: 'balayage',
+        hero_img: 'DSC00309.JPG',
+        isBalayage: true,
+        related: [
+            { key: 'extension', file: 'extension-capelli-montecarlo.html' },
+            { key: 'cheratina', file: 'cheratina-lisciante-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'extension-capelli-montecarlo.html',
+        key: 'extension',
+        page: 'extension',
+        hero_img: 'IMG_5024.jpeg',
+        related: [
+            { key: 'balayage', file: 'balayage-luxury-montecarlo.html' },
+            { key: 'cheratina', file: 'cheratina-lisciante-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'cheratina-lisciante-montecarlo.html',
+        key: 'cheratina',
+        page: 'cheratina',
+        hero_img: 'IMG_5338 2.jpeg',
+        related: [
+            { key: 'balayage', file: 'balayage-luxury-montecarlo.html' },
+            { key: 'extension', file: 'extension-capelli-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'parrucchiere-donna-montecarlo.html',
+        key: 'donna',
+        page: 'donna',
+        hero_img: 'IMG_0077.jpeg',
+        related: [
+            { key: 'balayage', file: 'balayage-luxury-montecarlo.html' },
+            { key: 'cheratina', file: 'cheratina-lisciante-montecarlo.html' },
+            { key: 'trucco', file: 'truccatore-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'parrucchiere-uomo-montecarlo.html',
+        key: 'uomo',
+        page: 'uomo',
+        hero_img: 'IMG_4541.jpg',
+        related: [
+            { key: 'barbiere', file: 'barbiere-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+            { key: 'bambini', file: 'parrucchiere-bambini-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'parrucchiere-bambini-montecarlo.html',
+        key: 'bambini',
+        page: 'bambini',
+        hero_img: 'IMG_3478.jpeg',
+        related: [
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+            { key: 'uomo', file: 'parrucchiere-uomo-montecarlo.html' },
+            { key: 'barbiere', file: 'barbiere-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'barbiere-montecarlo.html',
+        key: 'barbiere',
+        page: 'barbiere',
+        hero_img: 'IMG_0090.JPG',
+        related: [
+            { key: 'uomo', file: 'parrucchiere-uomo-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+            { key: 'trucco', file: 'truccatore-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'estetista-montecarlo.html',
+        key: 'estetista',
+        page: 'estetista',
+        hero_img: 'IMG_3902.jpeg',
+        related: [
+            { key: 'massaggi', file: 'massaggi-montecarlo.html' },
+            { key: 'trucco', file: 'truccatore-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'massaggi-montecarlo.html',
+        key: 'massaggi',
+        page: 'massaggi',
+        hero_img: 'IMG_4245.jpeg',
+        related: [
+            { key: 'estetista', file: 'estetista-montecarlo.html' },
+            { key: 'cheratina', file: 'cheratina-lisciante-montecarlo.html' },
+            { key: 'trucco', file: 'truccatore-montecarlo.html' },
+        ],
+    },
+    {
+        file: 'truccatore-montecarlo.html',
+        key: 'trucco',
+        page: 'trucco',
+        hero_img: 'IMG_0126.jpeg',
+        related: [
+            { key: 'estetista', file: 'estetista-montecarlo.html' },
+            { key: 'donna', file: 'parrucchiere-donna-montecarlo.html' },
+            { key: 'massaggi', file: 'massaggi-montecarlo.html' },
+        ],
+    },
+];
+
+function genBalayageSections(key) {
+    return `
+      <h2 data-i18n="services.${key}.h2_what"></h2>
+      <p data-i18n="services.${key}.what_text"></p>
+
+      <h2 data-i18n="services.${key}.h2_personalized"></h2>
+      <p data-i18n="services.${key}.personalized_text"></p>
+      <ul>
+        <li data-i18n="services.${key}.personalized_list_1"></li>
+        <li data-i18n="services.${key}.personalized_list_2"></li>
+        <li data-i18n="services.${key}.personalized_list_3"></li>
+        <li data-i18n="services.${key}.personalized_list_4"></li>
+      </ul>
+      <p data-i18n="services.${key}.personalized_after"></p>
+
+      <h2 data-i18n="services.${key}.h2_why"></h2>
+      <ul class="check-list">
+        <li data-i18n="services.${key}.why_list_1"></li>
+        <li data-i18n="services.${key}.why_list_2"></li>
+        <li data-i18n="services.${key}.why_list_3"></li>
+        <li data-i18n="services.${key}.why_list_4"></li>
+        <li data-i18n="services.${key}.why_list_5"></li>
+      </ul>
+
+      <h2 data-i18n="services.${key}.h2_types"></h2>
+      <p data-i18n="services.${key}.types_text"></p>
+
+      <h2 data-i18n="services.${key}.h2_combo"></h2>
+      <p data-i18n="services.${key}.combo_text"></p>
+      <ul>
+        <li data-i18n="services.${key}.combo_list_1"></li>
+        <li data-i18n="services.${key}.combo_list_2"></li>
+        <li data-i18n="services.${key}.combo_list_3"></li>
+        <li data-i18n="services.${key}.combo_list_4"></li>
+      </ul>
+
+      <h2 data-i18n="services.${key}.h2_international"></h2>
+      <p data-i18n="services.${key}.international_text"></p>`;
+}
+
+function genStandardSections(key) {
+    const hasListItem5 = key !== 'bambini';
+    return `
+      <h2 data-i18n="services.${key}.h2_why"></h2>
+      <p data-i18n="services.${key}.why_text"></p>
+
+      <h2 data-i18n="services.${key}.h2_services"></h2>
+      <ul class="check-list">
+        <li data-i18n="services.${key}.list_1"></li>
+        <li data-i18n="services.${key}.list_2"></li>
+        <li data-i18n="services.${key}.list_3"></li>
+        <li data-i18n="services.${key}.list_4"></li>
+        ${hasListItem5 ? `<li data-i18n="services.${key}.list_5"></li>` : ''}
+      </ul>
+
+      <h2 data-i18n="services.${key}.h2_experience"></h2>
+      <p data-i18n="services.${key}.experience_text"></p>`;
+}
+
+function genPage(service) {
+    const { file, key, page, hero_img, isBalayage, related } = service;
+    const sections = isBalayage ? genBalayageSections(key) : genStandardSections(key);
+
+    return `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.${page}.title"></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+</head>
+<body data-page="${page}">
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Giuseppe <span>Barra</span></a>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <div class="nav-dropdown">
+            <a class="nav-dropdown-trigger active" data-i18n="nav.services">
+              Servizi
+              <span class="nav-dropdown-arrow"></span>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+              <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+              <a href="/parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Parrucchiere Bambini</a>
+              <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+              <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+              <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension Great Lengths</a>
+              <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina Bio Lisciante</a>
+              <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+              <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+              <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco Professionale</a>
+            </div>
+          </div>
+          <a href="/#about" data-i18n="nav.about">Chi Siamo</a>
+          <a href="/#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="/#contact" data-i18n="nav.contact">Contatti</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="/" data-i18n="nav.home">Home</a>
+    <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+    <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+    <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+    <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+    <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
+    <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
+    <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+    <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+    <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
+    <a href="/#about" data-i18n="nav.about">Chi Siamo</a>
+    <a href="/#contact" data-i18n="nav.contact">Contatti</a>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="it">IT</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('/assets/photos/${hero_img}');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content container">
+      <p class="subtitle" data-i18n="hero.subtitle">Hair & Beauty Luxury</p>
+      <h1 data-i18n="services.${key}.h1"></h1>
+    </div>
+  </section>
+
+  <!-- Service Content -->
+  <section class="service-content">
+    <div class="container container--narrow">
+      <p class="fade-in" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;" data-i18n="services.${key}.intro"></p>
+${sections}
+
+      <!-- Gallery -->
+      <h2 data-i18n="portfolio.title"></h2>
+      <div class="gallery-grid" style="margin-top:1.5rem; margin-bottom: 2rem;">
+        <div class="gallery-item fade-in"><img src="/assets/photos/${hero_img}" alt="${key}" loading="lazy"></div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-section" style="padding: 3rem 0; text-align: center;">
+        <h2 data-i18n="service_page.book_title"></h2>
+        <div class="divider"></div>
+        <p data-i18n="service_page.book_text" style="margin: 0 auto;"></p>
+        <div class="btn-group" style="margin-top: 2rem;">
+          <a href="tel:+393933300236" class="btn btn-primary" data-i18n="cta.call">Chiamaci</a>
+          <a href="https://wa.me/393933300236" class="btn btn-outline" data-i18n="cta.whatsapp">WhatsApp</a>
+        </div>
+        <div class="yacht-badge" style="margin: 1.5rem auto 0; display: inline-flex;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1 2.5-2 5-2c1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M12 1v4"/></svg>
+          <span data-i18n="cta.yacht_text">Disponibile per appuntamenti su yacht 20:00–24:00</span>
+        </div>
+      </div>
+
+      <!-- Related Services -->
+      <h2 data-i18n="service_page.related_title" style="margin-top: 3rem;"></h2>
+      <div class="related-services">
+${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
+          <h4 data-i18n="services.${r.key}.title"></h4>
+          <p data-i18n="services.${r.key}.short"></p>
+        </a>`).join('\n')}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">Giuseppe <span>Barra</span></a>
+          <p data-i18n="footer.brand_text"></p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/giuseppe.barra.academy" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/giuseppe.barraa/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/393933300236" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_services">Servizi</h4>
+          <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+          <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+          <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+          <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+          <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_info">Informazioni</h4>
+          <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
+          <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+          <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+          <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
+          <a href="/parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Bambini</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.col_contact">Contatti</h4>
+          <a href="tel:+393933300236">+39 393 330 0236</a>
+          <a href="https://wa.me/393933300236">WhatsApp</a>
+          <p style="color:var(--color-white-muted);font-size:0.85rem;padding:5px 0;" data-i18n="footer.address"></p>
+          <p style="color:var(--color-white-muted);font-size:0.85rem;padding:5px 0;" data-i18n="footer.hours"></p>
+          <p style="color:var(--color-gold);font-size:0.85rem;padding:5px 0;" data-i18n="footer.yacht_hours"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Giuseppe Barra. <span data-i18n="footer.rights"></span></p>
+        <p style="color:var(--color-white-subtle);font-size:0.75rem;">Monte-Carlo, Monaco</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>`;
+}
+
+services.forEach(s => {
+    const html = genPage(s);
+    writeFileSync(s.file, html, 'utf-8');
+    console.log(`✅ Generated: ${s.file}`);
+});
+
+console.log(`\n✨ All ${services.length} service pages generated!`);
