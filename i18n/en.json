@@ -285,7 +285,8 @@
         "hours": "Every day 8:00 AM – 8:00 PM",
         "yacht_hours": "On yacht: 8:00 PM – 12:00 AM",
         "address": "27 av. de la Costa, Galerie Park Palace, Monte-Carlo",
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "made_by": "Website made by"
     },
     "info_bar": {
         "hours": "Every day 8:00 AM – 8:00 PM",

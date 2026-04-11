@@ -1074,6 +1074,24 @@ p {
   color: var(--color-white-subtle);
 }
 
+.footer-credit {
+  font-size: 0.75rem !important;
+  color: var(--color-white-subtle) !important;
+  letter-spacing: 0.02em;
+}
+
+.footer-credit-link {
+  color: var(--color-gold) !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast), text-shadow var(--transition-fast);
+}
+
+.footer-credit-link:hover {
+  color: var(--color-gold-light, #e0c96b) !important;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.4);
+}
+
 /* ── Scroll Animations ── */
 .fade-in {
   opacity: 0;

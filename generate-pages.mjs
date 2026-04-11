@@ -347,6 +347,7 @@ ${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
       </div>
       <div class="footer-bottom">
         <p>© 2026 Giuseppe Barra. <span data-i18n="footer.rights"></span></p>
+        <p class="footer-credit"><span data-i18n="footer.made_by"></span> <a href="https://www.linkedin.com/in/lucas-garcia-203706330/" target="_blank" rel="noopener" class="footer-credit-link">Lucas GARCIA</a></p>
         <p style="color:var(--color-white-subtle);font-size:0.75rem;">Monte-Carlo, Monaco</p>
       </div>
     </div>

@@ -12,6 +12,7 @@ const htmlFiles = readdirSync(__dirname)
   }, {});
 
 export default defineConfig({
+  base: '/Giuseppe-s-site/',
   build: {
     rollupOptions: {
       input: htmlFiles,
