@@ -185,7 +185,7 @@ function genPage(service) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.${page}.title"></title>
   <meta name="description" content="">
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
 </head>
 <body data-page="${page}">
@@ -193,31 +193,31 @@ function genPage(service) {
   <!-- Header -->
   <header class="header" id="header">
     <div class="container">
-      <a href="/" class="logo">Giuseppe <span>Barra</span></a>
+      <a href="./" class="logo">Giuseppe <span>Barra</span></a>
       <nav class="nav">
         <div class="nav-links">
-          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="./" data-i18n="nav.home">Home</a>
           <div class="nav-dropdown">
             <a class="nav-dropdown-trigger active" data-i18n="nav.services">
               Servizi
               <span class="nav-dropdown-arrow"></span>
             </a>
             <div class="nav-dropdown-menu">
-              <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
-              <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
-              <a href="/parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Parrucchiere Bambini</a>
-              <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
-              <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
-              <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension Great Lengths</a>
-              <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina Bio Lisciante</a>
-              <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
-              <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
-              <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco Professionale</a>
+              <a href="./parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+              <a href="./parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+              <a href="./parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Parrucchiere Bambini</a>
+              <a href="./barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+              <a href="./balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+              <a href="./extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension Great Lengths</a>
+              <a href="./cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina Bio Lisciante</a>
+              <a href="./estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+              <a href="./massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+              <a href="./truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco Professionale</a>
             </div>
           </div>
-          <a href="/#about" data-i18n="nav.about">Chi Siamo</a>
-          <a href="/#portfolio" data-i18n="nav.portfolio">Portfolio</a>
-          <a href="/#contact" data-i18n="nav.contact">Contatti</a>
+          <a href="./#about" data-i18n="nav.about">Chi Siamo</a>
+          <a href="./#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="./#contact" data-i18n="nav.contact">Contatti</a>
         </div>
         <div class="lang-switcher">
           <button class="lang-btn active" data-lang="it">IT</button>
@@ -233,18 +233,18 @@ function genPage(service) {
 
   <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobile-nav">
-    <a href="/" data-i18n="nav.home">Home</a>
-    <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
-    <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
-    <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
-    <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
-    <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
-    <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
-    <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
-    <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
-    <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
-    <a href="/#about" data-i18n="nav.about">Chi Siamo</a>
-    <a href="/#contact" data-i18n="nav.contact">Contatti</a>
+    <a href="./" data-i18n="nav.home">Home</a>
+    <a href="./parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+    <a href="./parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+    <a href="./barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+    <a href="./balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+    <a href="./extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
+    <a href="./cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
+    <a href="./estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+    <a href="./massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+    <a href="./truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
+    <a href="./#about" data-i18n="nav.about">Chi Siamo</a>
+    <a href="./#contact" data-i18n="nav.contact">Contatti</a>
     <div class="lang-switcher">
       <button class="lang-btn active" data-lang="it">IT</button>
       <button class="lang-btn" data-lang="fr">FR</button>
@@ -254,7 +254,7 @@ function genPage(service) {
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <div class="hero-bg" style="background-image: url('/assets/photos/${hero_img}');"></div>
+    <div class="hero-bg" style="background-image: url('./assets/photos/${hero_img}');"></div>
     <div class="hero-overlay"></div>
     <div class="page-hero-content container">
       <p class="subtitle" data-i18n="hero.subtitle">Hair & Beauty Luxury</p>
@@ -271,7 +271,7 @@ ${sections}
       <!-- Gallery -->
       <h2 data-i18n="portfolio.title"></h2>
       <div class="gallery-grid" style="margin-top:1.5rem; margin-bottom: 2rem;">
-        <div class="gallery-item fade-in"><img src="/assets/photos/${hero_img}" alt="${key}" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="./assets/photos/${hero_img}" alt="${key}" loading="lazy"></div>
       </div>
 
       <!-- CTA -->
@@ -292,7 +292,7 @@ ${sections}
       <!-- Related Services -->
       <h2 data-i18n="service_page.related_title" style="margin-top: 3rem;"></h2>
       <div class="related-services">
-${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
+${related.map(r => `        <a href="./${r.file}" class="related-card fade-in">
           <h4 data-i18n="services.${r.key}.title"></h4>
           <p data-i18n="services.${r.key}.short"></p>
         </a>`).join('\n')}
@@ -306,7 +306,7 @@ ${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/" class="logo">Giuseppe <span>Barra</span></a>
+          <a href="./" class="logo">Giuseppe <span>Barra</span></a>
           <p data-i18n="footer.brand_text"></p>
           <div class="footer-social">
             <a href="https://www.facebook.com/giuseppe.barra.academy" target="_blank" rel="noopener" aria-label="Facebook">
@@ -322,19 +322,19 @@ ${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.col_services">Servizi</h4>
-          <a href="/parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
-          <a href="/parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
-          <a href="/barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
-          <a href="/balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
-          <a href="/extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
+          <a href="./parrucchiere-donna-montecarlo.html" data-i18n="nav_services.donna">Parrucchiere Donna</a>
+          <a href="./parrucchiere-uomo-montecarlo.html" data-i18n="nav_services.uomo">Parrucchiere Uomo</a>
+          <a href="./barbiere-montecarlo.html" data-i18n="nav_services.barbiere">Barbiere</a>
+          <a href="./balayage-luxury-montecarlo.html" data-i18n="nav_services.balayage">Balayage Luxury</a>
+          <a href="./extension-capelli-montecarlo.html" data-i18n="nav_services.extension">Extension</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.col_info">Informazioni</h4>
-          <a href="/cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
-          <a href="/estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
-          <a href="/massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
-          <a href="/truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
-          <a href="/parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Bambini</a>
+          <a href="./cheratina-lisciante-montecarlo.html" data-i18n="nav_services.cheratina">Cheratina</a>
+          <a href="./estetista-montecarlo.html" data-i18n="nav_services.estetista">Estetista</a>
+          <a href="./massaggi-montecarlo.html" data-i18n="nav_services.massaggi">Massaggi</a>
+          <a href="./truccatore-montecarlo.html" data-i18n="nav_services.trucco">Trucco</a>
+          <a href="./parrucchiere-bambini-montecarlo.html" data-i18n="nav_services.bambini">Bambini</a>
         </div>
         <div class="footer-col">
           <h4 data-i18n="footer.col_contact">Contatti</h4>
@@ -353,7 +353,7 @@ ${related.map(r => `        <a href="/${r.file}" class="related-card fade-in">
     </div>
   </footer>
 
-  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>`;
 }

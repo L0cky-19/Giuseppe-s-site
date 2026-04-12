@@ -136,7 +136,7 @@ function initScrollSpy() {
                     // Home link active on hero/services sections
                     if (id === 'hero' || id === 'services') {
                         navLinks.forEach(link => link.classList.remove('active'));
-                        const homeLink = document.querySelector('.nav-links a[href="/"], .nav-links a[href="./"]');
+                        const homeLink = document.querySelector('.nav-links a[href="./"], .nav-links a[href="./index.html"]');
                         if (homeLink) homeLink.classList.add('active');
                     }
                 }
