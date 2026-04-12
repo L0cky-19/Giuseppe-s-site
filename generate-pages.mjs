@@ -220,9 +220,9 @@ function genPage(service) {
           <a href="./#contact" data-i18n="nav.contact">Contatti</a>
         </div>
         <div class="lang-switcher">
-          <button class="lang-btn active" data-lang="it">IT</button>
-          <button class="lang-btn" data-lang="fr">FR</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="it">🇮🇹</button>
+          <button class="lang-btn" data-lang="fr">🇫🇷</button>
+          <button class="lang-btn" data-lang="en">🇬🇧</button>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -246,9 +246,9 @@ function genPage(service) {
     <a href="./#about" data-i18n="nav.about">Chi Siamo</a>
     <a href="./#contact" data-i18n="nav.contact">Contatti</a>
     <div class="lang-switcher">
-      <button class="lang-btn active" data-lang="it">IT</button>
-      <button class="lang-btn" data-lang="fr">FR</button>
-      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn active" data-lang="it">🇮🇹</button>
+      <button class="lang-btn" data-lang="fr">🇫🇷</button>
+      <button class="lang-btn" data-lang="en">🇬🇧</button>
     </div>
   </div>
 
