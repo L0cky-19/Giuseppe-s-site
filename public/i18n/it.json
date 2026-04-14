@@ -94,7 +94,8 @@
             "list_4": "Piega e styling per eventi",
             "list_5": "Consulenza personalizzata sul look",
             "h2_experience": "Un'Esperienza Luxury a Monte-Carlo",
-            "experience_text": "Nel salone Barra Giuseppe, ogni donna viene accolta in un ambiente elegante e riservato. La nostra filosofia è semplice: ascoltare, consigliare e valorizzare, con prodotti selezionati e tecniche all'avanguardia."
+            "experience_text": "Nel salone Barra Giuseppe, ogni donna viene accolta in un ambiente elegante e riservato. La nostra filosofia è semplice: ascoltare, consigliare e valorizzare, con prodotti selezionati e tecniche all'avanguardia.",
+            "price_info": "Taglio + brushing da €80 · Brushing €44 · Colore + brushing da €104"
         },
         "uomo": {
             "title": "Parrucchiere Uomo Luxury",
@@ -110,7 +111,8 @@
             "list_4": "Trattamenti per il cuoio capelluto",
             "list_5": "Consulenza sull'immagine",
             "h2_experience": "Stile e Precisione a Monte-Carlo",
-            "experience_text": "Il salone Barra Giuseppe è il punto di riferimento per l'uomo che cerca un look impeccabile a Monte-Carlo. Tecniche classiche si incontrano con tendenze moderne per un risultato sempre elegante."
+            "experience_text": "Il salone Barra Giuseppe è il punto di riferimento per l'uomo che cerca un look impeccabile a Monte-Carlo. Tecniche classiche si incontrano con tendenze moderne per un risultato sempre elegante.",
+            "price_info": "Taglio uomo – €36"
         },
         "bambini": {
             "title": "Parrucchiere Bambini",
@@ -141,7 +143,8 @@
             "list_4": "Trattamento viso uomo",
             "list_5": "Styling con prodotti premium",
             "h2_experience": "Tradizione e Stile",
-            "experience_text": "Il barbiere Barra Giuseppe offre un'esperienza raffinata, dove tradizione e modernità si fondono per creare il look perfetto."
+            "experience_text": "Il barbiere Barra Giuseppe offre un'esperienza raffinata, dove tradizione e modernità si fondono per creare il look perfetto.",
+            "price_info": "Taglio uomo – €36"
         },
         "balayage": {
             "title": "Balayage Luxury",
@@ -172,23 +175,25 @@
             "combo_list_3": "Cheratina lisciante",
             "combo_list_4": "Extension capelli",
             "h2_international": "Per Clientela Internazionale",
-            "international_text": "Il nostro salone accoglie clienti locali e internazionali che cercano un balayage luxury a Monte-Carlo in un ambiente elegante, riservato e professionale. Offriamo consulenze personalizzate e un servizio su misura, in linea con gli standard di eccellenza della clientela di Monaco."
+            "international_text": "Il nostro salone accoglie clienti locali e internazionali che cercano un balayage luxury a Monte-Carlo in un ambiente elegante, riservato e professionale. Offriamo consulenze personalizzate e un servizio su misura, in linea con gli standard di eccellenza della clientela di Monaco.",
+            "price_info": "A partire da €150"
         },
         "extension": {
             "title": "Extension Great Lengths",
             "short": "Extension a ultrasuoni leggere, invisibili e naturali per lunghezza e volume perfetti.",
             "h1": "Extension Luxury Great Lengths a Monte-Carlo",
-            "intro": "Applichiamo extension Great Lengths a ultrasuoni, leggere, invisibili e naturali, ideali per aumentare lunghezza e volume dei capelli. Ogni trattamento è personalizzato in base al tipo di capello, colore e desiderio di stile, garantendo massima naturalezza, comfort e durata.",
-            "h2_why": "Perché Scegliere le Extension Great Lengths",
-            "why_text": "Perfetto per chi desidera un servizio luxury e su misura a Monte-Carlo. Le extension Great Lengths sono realizzate con capelli naturali al 100% di altissima qualità.",
-            "h2_services": "Il Nostro Metodo",
-            "list_1": "Applicazione a ultrasuoni – zero danni",
-            "list_2": "Capelli 100% naturali di alta qualità",
-            "list_3": "Personalizzazione colore e lunghezza",
-            "list_4": "Risultato invisibile e naturale",
-            "list_5": "Manutenzione e riapplicazione",
-            "h2_experience": "Lunghezza e Volume Senza Compromessi",
-            "experience_text": "Nel salone Barra Giuseppe, le extension sono un'arte. Ogni applicazione è studiata per fondersi perfettamente con i capelli naturali, creando un risultato impeccabile e di lunga durata."
+            "intro": "Nel mondo dell'alta bellezza, il vero lusso non richiede mai compromessi. Per chi desidera volume, lunghezza e un colore vibrante nel rispetto assoluto della salute del capello, utilizziamo esclusivamente il sistema Great Lengths con la rivoluzionaria tecnologia ad ultrasuoni a freddo: una scelta che fa un'enorme, fondamentale differenza.",
+            "h2_why": "La Rivoluzione degli Ultrasuoni: Nessun Danno, Nessuna Bruciatura",
+            "why_text": "L'applicazione classica a caldo utilizza cheratina sciolta a temperature che raggiungono i 250 gradi, aggredendo violentemente il fusto del capello. La tecnologia ad ultrasuoni Great Lengths è completamente a freddo: le vibrazioni avvolgono il capello naturale in modo piatto, invisibile e impercettibile al tatto. Nessun calore estremo, nessuna colla dannosa, nessuna rottura.",
+            "h2_services": "Lavorati come il Cashmere: la Colorazione per Osmosi",
+            "list_1": "Applicazione a ultrasuoni a freddo – zero danni",
+            "list_2": "Capelli 100% naturali certificati, etici e di altissima qualità",
+            "list_3": "Colorazione per osmosi – stessa tecnica dei tessuti pregiati",
+            "list_4": "Colori ricchi, profondi e duraturi che non sbiadiscono",
+            "list_5": "Applicazione sartoriale, studio della densità e qualità individuali",
+            "h2_experience": "Un Risultato che Dura da 4 a 6 Mesi",
+            "experience_text": "Il mio approccio è puramente sartoriale: studio accurato della qualità dei tuoi capelli, della densità della radice e delle tue esigenze prima di ogni applicazione. Grazie all'eccellenza dei materiali e alla precisione chirurgica della tecnica, le extension Great Lengths ad ultrasuoni mantengono la loro perfezione per 4-6 mesi, così naturali che nessuno si accorgerà della loro presenza.",
+            "price_info": "A partire da €300"
         },
         "cheratina": {
             "title": "Cheratina Bio Lisciante",
@@ -204,7 +209,8 @@
             "list_4": "Risultato naturale e non rigido",
             "list_5": "Durata fino a 4-5 mesi",
             "h2_experience": "Liscio Perfetto e Naturale",
-            "experience_text": "La cheratina bio di Barra Giuseppe trasforma i capelli rendendoli setosi, luminosi e facili da gestire. Un trattamento luxury che rispetta la salute dei capelli."
+            "experience_text": "La cheratina bio di Barra Giuseppe trasforma i capelli rendendoli setosi, luminosi e facili da gestire. Un trattamento luxury che rispetta la salute dei capelli.",
+            "price_info": "Su consulenza personalizzata"
         },
         "estetista": {
             "title": "Estetista Luxury",
@@ -236,31 +242,33 @@
             "list_4": "Trattamenti specifici per stress e tensioni",
             "list_5": "Esperienza wellness personalizzata",
             "h2_experience": "Relax nel Cuore di Monte-Carlo",
-            "experience_text": "I massaggi luxury di Barra Giuseppe offrono un'oasi di tranquillità nel cuore di Monte-Carlo. Un'esperienza che rigenera corpo e mente."
+            "experience_text": "I massaggi luxury di Barra Giuseppe offrono un'oasi di tranquillità nel cuore di Monte-Carlo. Un'esperienza che rigenera corpo e mente.",
+            "price_info": "A partire da €100"
         },
         "trucco": {
             "title": "Trucco Professionale per Eventi",
             "short": "Trucco elegante e duraturo per gala, yacht e feste estive con prodotti waterproof.",
-            "h1": "Trucco Professionale per Eventi a Monte-Carlo",
-            "intro": "Il nostro trucco professionale per eventi a Monte-Carlo garantisce un risultato elegante e duraturo, ideale per gala, yacht e feste estive. Prodotti waterproof e tecniche avanzate assicurano un look luminoso, sofisticato e resistente a caldo, sole e umidità, perfetto per eventi luxury e ambienti esclusivi.",
-            "h2_why": "Perché Scegliere il Nostro Trucco",
-            "why_text": "Il trucco professionale di Barra Giuseppe è studiato per resistere alle condizioni più impegnative: dal sole mediterraneo alle serate in yacht. Risultati impeccabili dalla mattina alla notte.",
-            "h2_services": "I Nostri Servizi Trucco",
-            "list_1": "Trucco per eventi e gala",
-            "list_2": "Trucco sposa e cerimonie",
-            "list_3": "Look per shooting fotografici",
-            "list_4": "Trucco waterproof per yacht ed eventi estivi",
-            "list_5": "Consulenza personalizzata sul colore e lo stile",
-            "h2_experience": "Look Perfetto per Ogni Occasione",
-            "experience_text": "Che si tratti di un gala esclusivo, un matrimonio o una serata in yacht, il trucco di Barra Giuseppe assicura un look impeccabile e sofisticato."
+            "h1": "Make-up Artist Professionale a Monte-Carlo",
+            "intro": "Nel Principato di Monaco, ogni evento è un palcoscenico globale. Dai Gala della Croce Rossa ai party esclusivi durante il Gran Premio, fino alle serate a bordo degli yacht più lussuosi del mondo, l'immagine non è solo un dettaglio: è il biglietto da visita della propria personalità. In un contesto così elitario, affidarsi a un Make-up Artist di calibro internazionale è una necessità assoluta.",
+            "h2_why": "L'Esperienza al Servizio delle Stelle",
+            "why_text": "Ho curato i look di personalità iconiche del cinema, della musica e della moda: Luca Argentero, Lorenzo Zurzolo, Samira Wiley, Naomi Campbell, Carla Fracci. Ho lavorato con Andrea Bocelli, Brian May e i Black Eyed Peas. Ogni volto richiede uno studio accurato della personalità: il mio approccio è psicologico oltre che estetico, per creare un look che sia la massima espressione del carisma interiore.",
+            "h2_services": "Tenuta Estrema: il Segreto del Luxury Make-up",
+            "list_1": "Trucco per eventi esclusivi, gala e cerimonie",
+            "list_2": "Trucco sposa con tenuta estrema",
+            "list_3": "Look per shooting e produzioni fotografiche",
+            "list_4": "Airbrush Make-up (trucco ad aerografo) – risultato impeccabile in ogni condizione",
+            "list_5": "Trucco waterproof per yacht, piscine e ambienti estivi",
+            "h2_experience": "Il Tuo Red Carpet Privato a Monaco",
+            "experience_text": "Utilizzo tecniche di precisione come l'Airbrush Make-up, combinato con pigmenti altamente resistenti all'acqua. Il risultato è sorprendente: una pelle di porcellana, leggera e luminosa, che non cede, non sbava e non perde intensità. Che tu stia partecipando a un pool party esclusivo, godendoti la Costa Azzurra o ballando fino all'alba su uno yacht, la tua immagine rimarrà scolpita nella sua perfezione.",
+            "price_info": "A partire da €80"
         }
     },
     "about": {
         "label": "Chi Siamo",
-        "title": "L'Arte della Bellezza a Monte-Carlo",
-        "p1": "Giuseppe Barra è un maestro dell'arte del grooming e della bellezza, con anni di esperienza al servizio della clientela più esigente nel cuore del Principato di Monaco.",
-        "p2": "Formato nelle migliori tecniche di barberia tradizionale e moderna, Giuseppe unisce maestria artigianale e tendenze contemporanee per creare look eleganti, unici e personalizzati.",
-        "p3": "Ogni cliente riceve un'attenzione personalizzata in un ambiente lussuoso, pensato per offrire relax e trasformazione.",
+        "title": "Il Viaggio della Bellezza",
+        "p1": "Nato a Torino, Giuseppe Barra ha mosso i primi passi nell'haute coiffure a soli 13 anni. A 22 anni è diventato Trainer per il prestigioso marchio Jean Louis David, viaggiando in tutta Italia per formare professionisti. L'esperienza a New York ha completato la sua visione internazionale, dando vita a uno stile unico e inconfondibile.",
+        "p2": "La sua firma come Hair & Makeup Artist lo ha portato sui red carpet più iconici: Cannes, Venezia e Roma. Ha firmato i look delle più esclusive Fashion Week di Milano, Parigi, Dubai e New York, e lavorato a fianco di leggende come Andrea Bocelli, Brian May, i Black Eyed Peas, Naomi Campbell e Carla Fracci.",
+        "p3": "Oggi, nel cuore del Principato di Monaco, Giuseppe mette la sua esperienza da Red Carpet al servizio di una clientela esclusiva e cosmopolita. Ogni appuntamento diventa un momento di pura trasformazione, con un'attenzione sartoriale ai dettagli per esaltare il fascino unico di ogni persona.",
         "cta": "Scopri i Servizi"
     },
     "portfolio": {
@@ -297,6 +305,7 @@
         "back": "Torna ai Servizi",
         "related_title": "Servizi Correlati",
         "book_title": "Prenota Questo Servizio",
-        "book_text": "Contattaci per una consulenza personalizzata e scopri il piacere di un servizio esclusivo a Monte-Carlo."
+        "book_text": "Contattaci per una consulenza personalizzata e scopri il piacere di un servizio esclusivo a Monte-Carlo.",
+        "price_title": "Tariffe"
     }
 }

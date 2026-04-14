@@ -116,33 +116,38 @@ function setActiveNav() {
  * Scroll-spy: update active nav link as user scrolls through sections
  */
 function initScrollSpy() {
-    const sections = document.querySelectorAll('section[id], div[id="footer"]');
+    const sections = document.querySelectorAll('section[id]');
     if (!sections.length) return;
 
-    const navLinks = document.querySelectorAll('.nav-links a[href^="#"], .mobile-nav a[href^="#"]');
-    if (!navLinks.length) return;
+    // All top-level nav links (home + anchor links)
+    const allNavLinks = document.querySelectorAll('.nav-links > a, .mobile-nav > a');
+    if (!allNavLinks.length) return;
+
+    const homeLink = document.querySelector('.nav-links a[href="/"], .nav-links a[href="./"], .nav-links a[href="./index.html"]');
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    navLinks.forEach(link => {
-                        link.classList.remove('active');
+                if (!entry.isIntersecting) return;
+                const id = entry.target.getAttribute('id');
+
+                // Remove active from all top-level nav links
+                allNavLinks.forEach(link => link.classList.remove('active'));
+
+                if (id === 'hero' || id === 'services') {
+                    // Home sections → activate home link
+                    if (homeLink) homeLink.classList.add('active');
+                } else {
+                    // Anchor section → activate matching link
+                    allNavLinks.forEach(link => {
                         if (link.getAttribute('href') === '#' + id) {
                             link.classList.add('active');
                         }
                     });
-                    // Home link active on hero/services sections
-                    if (id === 'hero' || id === 'services') {
-                        navLinks.forEach(link => link.classList.remove('active'));
-                        const homeLink = document.querySelector('.nav-links a[href="./"], .nav-links a[href="./index.html"]');
-                        if (homeLink) homeLink.classList.add('active');
-                    }
                 }
             });
         },
-        { threshold: 0.3, rootMargin: '0px 0px -30% 0px' }
+        { threshold: 0.4, rootMargin: '0px 0px -20% 0px' }
     );
 
     sections.forEach(section => observer.observe(section));

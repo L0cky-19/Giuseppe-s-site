@@ -94,7 +94,8 @@
             "list_4": "Blow-dry and styling for events",
             "list_5": "Personalized look consultation",
             "h2_experience": "A Luxury Experience in Monte-Carlo",
-            "experience_text": "At Barra Giuseppe salon, every woman is welcomed in an elegant and discreet environment. Our philosophy is simple: listen, advise and enhance, with selected products and cutting-edge techniques."
+            "experience_text": "At Barra Giuseppe salon, every woman is welcomed in an elegant and discreet environment. Our philosophy is simple: listen, advise and enhance, with selected products and cutting-edge techniques.",
+            "price_info": "Cut + blow-dry from €80 · Blow-dry €44 · Colour + blow-dry from €104"
         },
         "uomo": {
             "title": "Luxury Men's Hairdresser",
@@ -110,7 +111,8 @@
             "list_4": "Scalp treatments",
             "list_5": "Image consulting",
             "h2_experience": "Style and Precision in Monte-Carlo",
-            "experience_text": "Barra Giuseppe salon is the reference for men seeking a flawless look in Monte-Carlo. Classic techniques meet modern trends for an always elegant result."
+            "experience_text": "Barra Giuseppe salon is the reference for men seeking a flawless look in Monte-Carlo. Classic techniques meet modern trends for an always elegant result.",
+            "price_info": "Men's haircut – €36"
         },
         "bambini": {
             "title": "Children's Hairdresser",
@@ -141,7 +143,8 @@
             "list_4": "Men's facial treatment",
             "list_5": "Styling with premium products",
             "h2_experience": "Tradition and Style",
-            "experience_text": "Barra Giuseppe barber offers a refined experience where tradition and modernity blend to create the perfect look."
+            "experience_text": "Barra Giuseppe barber offers a refined experience where tradition and modernity blend to create the perfect look.",
+            "price_info": "Men's haircut – €36"
         },
         "balayage": {
             "title": "Luxury Balayage",
@@ -172,23 +175,25 @@
             "combo_list_3": "Keratin straightening",
             "combo_list_4": "Hair extensions",
             "h2_international": "For International Clientele",
-            "international_text": "Our salon welcomes local and international clients seeking a luxury balayage in Monte-Carlo in an elegant, discreet and professional environment. We offer personalized consultations and a tailored service, in line with the standards of excellence of Monaco's clientele."
+            "international_text": "Our salon welcomes local and international clients seeking a luxury balayage in Monte-Carlo in an elegant, discreet and professional environment. We offer personalized consultations and a tailored service, in line with the standards of excellence of Monaco's clientele.",
+            "price_info": "From €150"
         },
         "extension": {
             "title": "Great Lengths Extensions",
             "short": "Light, invisible and natural ultrasonic extensions for perfect length and volume.",
             "h1": "Luxury Great Lengths Extensions in Monte-Carlo",
-            "intro": "We apply Great Lengths ultrasonic extensions, light, invisible and natural, ideal for increasing hair length and volume. Each treatment is personalized based on hair type, color and style preferences, ensuring maximum naturalness, comfort and durability.",
-            "h2_why": "Why Choose Great Lengths Extensions",
-            "why_text": "Perfect for those who desire a luxury and tailored service in Monte-Carlo. Great Lengths extensions are made with 100% natural, highest quality hair.",
-            "h2_services": "Our Method",
-            "list_1": "Ultrasonic application – zero damage",
-            "list_2": "100% natural high-quality hair",
-            "list_3": "Color and length customization",
-            "list_4": "Invisible and natural result",
-            "list_5": "Maintenance and reapplication",
-            "h2_experience": "Length and Volume Without Compromise",
-            "experience_text": "At Barra Giuseppe salon, extensions are an art. Every application is designed to blend perfectly with natural hair, creating a flawless and long-lasting result."
+            "intro": "In the world of high-end beauty, true luxury never compromises. For those who desire volume, length and vibrant colour while absolutely preserving hair health, we work exclusively with the Great Lengths system using the revolutionary cold ultrasonic technology — a choice that makes a fundamental difference.",
+            "h2_why": "The Ultrasonic Revolution: Zero Damage, Zero Heat",
+            "why_text": "Traditional hot application uses keratin melted at temperatures reaching 250°C, violently attacking the hair shaft. Great Lengths ultrasonic technology is entirely cold: the vibrations wrap around the natural hair in a flat, invisible and imperceptible way. No extreme heat, no harmful adhesive, no breakage.",
+            "h2_services": "Crafted Like Cashmere: Osmosis Colouring",
+            "list_1": "Cold ultrasonic application – zero damage",
+            "list_2": "Certified 100% natural, ethical, highest-quality hair",
+            "list_3": "Osmosis colouring – same technique as fine fabrics",
+            "list_4": "Rich, deep and long-lasting colours that don't fade",
+            "list_5": "Tailored application: individual density and quality analysis",
+            "h2_experience": "A Result That Lasts 4 to 6 Months",
+            "experience_text": "My approach is purely bespoke: a careful study of your hair quality, root density and needs before every application. Thanks to the excellence of the materials and the surgical precision of the technique, Great Lengths ultrasonic extensions maintain their perfection for 4–6 months, so natural that no one will ever notice they are there.",
+            "price_info": "From €300"
         },
         "cheratina": {
             "title": "Bio Keratin Straightening",
@@ -204,7 +209,8 @@
             "list_4": "Natural and non-rigid result",
             "list_5": "Duration up to 4-5 months",
             "h2_experience": "Perfect Natural Straightening",
-            "experience_text": "Barra Giuseppe's bio keratin transforms hair making it silky, luminous and easy to manage. A luxury treatment that respects hair health."
+            "experience_text": "Barra Giuseppe's bio keratin transforms hair making it silky, luminous and easy to manage. A luxury treatment that respects hair health.",
+            "price_info": "On personalised consultation"
         },
         "estetista": {
             "title": "Luxury Aesthetician",
@@ -236,31 +242,33 @@
             "list_4": "Specific stress and tension treatments",
             "list_5": "Personalized wellness experience",
             "h2_experience": "Relaxation in the Heart of Monte-Carlo",
-            "experience_text": "Barra Giuseppe's luxury massages offer an oasis of tranquility in the heart of Monte-Carlo. An experience that rejuvenates body and mind."
+            "experience_text": "Barra Giuseppe's luxury massages offer an oasis of tranquility in the heart of Monte-Carlo. An experience that rejuvenates body and mind.",
+            "price_info": "From €100"
         },
         "trucco": {
             "title": "Professional Event Makeup",
             "short": "Elegant and long-lasting makeup for galas, yachts and summer parties with waterproof products.",
-            "h1": "Professional Event Makeup in Monte-Carlo",
-            "intro": "Our professional event makeup in Monte-Carlo guarantees an elegant and long-lasting result, ideal for galas, yachts and summer parties. Waterproof products and advanced techniques ensure a luminous, sophisticated look resistant to heat, sun and humidity, perfect for luxury events and exclusive settings.",
-            "h2_why": "Why Choose Our Makeup",
-            "why_text": "Barra Giuseppe's professional makeup is designed to withstand the most demanding conditions: from Mediterranean sun to yacht evenings. Flawless results from morning to night.",
-            "h2_services": "Our Makeup Services",
-            "list_1": "Event and gala makeup",
-            "list_2": "Bridal and ceremony makeup",
-            "list_3": "Photoshoot looks",
-            "list_4": "Waterproof makeup for yachts and summer events",
-            "list_5": "Personalized color and style consultation",
-            "h2_experience": "Perfect Look for Every Occasion",
-            "experience_text": "Whether it's an exclusive gala, a wedding or a yacht evening, Barra Giuseppe's makeup ensures a flawless and sophisticated look."
+            "h1": "Professional Make-up Artist in Monte-Carlo",
+            "intro": "In the Principality of Monaco, every event is a global stage. From Red Cross Galas to exclusive Grand Prix parties and nights aboard the world's most luxurious yachts, your image is not just a detail — it is the calling card of your personality. In such an elite context, entrusting your look to an internationally acclaimed Make-up Artist is an absolute necessity.",
+            "h2_why": "Experience at the Service of Stars",
+            "why_text": "I have crafted the looks of iconic personalities from cinema, music and fashion: Luca Argentero, Lorenzo Zurzolo, Samira Wiley, Naomi Campbell, Carla Fracci. I have worked alongside Andrea Bocelli, Brian May and the Black Eyed Peas. Every face requires a careful study of personality — my approach is psychological as much as aesthetic, creating a look that is the fullest expression of inner charisma.",
+            "h2_services": "Extreme Hold: the Secret of Luxury Make-up",
+            "list_1": "Makeup for exclusive events, galas and ceremonies",
+            "list_2": "Bridal makeup with extreme hold",
+            "list_3": "Looks for shoots and photography productions",
+            "list_4": "Airbrush Make-up – flawless result in any condition",
+            "list_5": "Waterproof makeup for yachts, pools and outdoor summer settings",
+            "h2_experience": "Your Private Red Carpet in Monaco",
+            "experience_text": "I use precision techniques including Airbrush Make-up, combined with highly water-resistant pigments. The result is stunning: a porcelain skin, light and luminous, that does not crack, smudge or lose intensity. Whether attending an exclusive pool party, enjoying the Côte d'Azur or dancing until dawn on a yacht deck, your image will remain sculpted in its original perfection.",
+            "price_info": "From €80"
         }
     },
     "about": {
         "label": "About",
-        "title": "The Art of Beauty in Monte-Carlo",
-        "p1": "Giuseppe Barra is a master craftsman in the art of grooming and beauty, bringing years of refined expertise to the prestigious Principality of Monaco.",
-        "p2": "Trained in the finest techniques of traditional and modern barbering, Giuseppe combines timeless craftsmanship with contemporary trends to create elegant, unique and personalized looks.",
-        "p3": "Each client receives personalized attention in a luxurious setting designed for relaxation and transformation.",
+        "title": "The Journey of Beauty",
+        "p1": "Born in Turin, Giuseppe Barra began his journey into haute coiffure at just 13 years of age. At 22 he became a Trainer for the prestigious Jean Louis David brand, travelling across Italy to train professionals. His experience in New York completed his international vision, giving birth to a unique and unmistakable style.",
+        "p2": "His signature as a Hair & Makeup Artist has brought him to the world's most iconic red carpets: Cannes, Venice and Rome. He has created looks for the Fashion Weeks of Milan, Paris, Dubai and New York, and worked alongside legends such as Andrea Bocelli, Brian May, the Black Eyed Peas, Naomi Campbell and Carla Fracci.",
+        "p3": "Today, in the heart of the Principality of Monaco, Giuseppe brings his Red Carpet expertise to an exclusive and cosmopolitan clientele. Every appointment becomes a moment of pure transformation — a tailored attention to detail to enhance the unique charm of each individual.",
         "cta": "Discover Our Services"
     },
     "portfolio": {
@@ -297,6 +305,7 @@
         "back": "Back to Services",
         "related_title": "Related Services",
         "book_title": "Book This Service",
-        "book_text": "Contact us for a personalized consultation and discover the pleasure of an exclusive service in Monte-Carlo."
+        "book_text": "Contact us for a personalized consultation and discover the pleasure of an exclusive service in Monte-Carlo.",
+        "price_title": "Prices"
     }
 }
