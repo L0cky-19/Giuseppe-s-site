@@ -290,14 +290,14 @@
         "col_services": "Services",
         "col_info": "Informations",
         "col_contact": "Contact",
-        "hours": "Tous les jours 8h00 – 20h00",
+        "hours": "Tous les jours 8h00 – 00h00 · Sur rendez-vous uniquement",
         "yacht_hours": "Sur yacht : 20h00 – 00h00",
         "address": "27 av. de la Costa, Galerie Park Palace, Monte-Carlo",
         "rights": "Tous droits réservés.",
         "made_by": "Site web réalisé par"
     },
     "info_bar": {
-        "hours": "Tous les jours 8h00 – 20h00",
+        "hours": "Tous les jours 8h00 – 00h00 · Sur rendez-vous uniquement",
         "yacht": "Yacht : sur rendez-vous 20h00 – 00h00",
         "location": "Monte-Carlo, Monaco"
     },
@@ -306,6 +306,8 @@
         "related_title": "Services Associés",
         "book_title": "Réserver Ce Service",
         "book_text": "Contactez-nous pour une consultation personnalisée et découvrez le plaisir d'un service exclusif à Monte-Carlo.",
-        "price_title": "Tarifs"
+        "price_title": "Tarifs",
+        "appointment_only": "Sur rendez-vous uniquement",
+        "weekend_surcharge": "Samedi +30% · Dimanche +50%"
     }
 }
