@@ -232,7 +232,7 @@ function initPortfolioGallery() {
         const end = Math.min(currentIndex + BATCH_SIZE, allPhotos.length);
         for (let i = currentIndex; i < end; i++) {
             const div = document.createElement('div');
-            div.className = 'gallery-item fade-in';
+            div.className = 'gallery-item fade-in visible';
             const img = document.createElement('img');
             img.src = './assets/photos/' + allPhotos[i];
             img.alt = 'Portfolio ' + (i + 1);
@@ -245,20 +245,6 @@ function initPortfolioGallery() {
         // Update show-more button visibility
         showMoreWrap.style.display = currentIndex >= allPhotos.length ? 'none' : '';
 
-        // Re-apply scroll animations to new items
-        const newItems = grid.querySelectorAll('.fade-in:not(.visible)');
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-        );
-        newItems.forEach(el => observer.observe(el));
     }
 
     // Initial load
