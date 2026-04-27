@@ -11,7 +11,7 @@ let currentLang = localStorage.getItem('gb-lang') || 'it';
 async function loadLanguage(lang) {
     if (translations[lang]) return translations[lang];
     try {
-        const basePath = import.meta.env.BASE_URL || '/';
+        const basePath = import.meta.env?.BASE_URL ?? '/';
         const res = await fetch(`${basePath}i18n/${lang}.json`);
         translations[lang] = await res.json();
         return translations[lang];
@@ -112,4 +112,12 @@ function getCurrentLang() {
     return currentLang;
 }
 
-export { applyTranslations, initLangSwitcher, getCurrentLang, loadLanguage };
+/**
+ * Synchronous translation lookup (only works after the dict is cached via loadLanguage/applyTranslations)
+ */
+function translate(key) {
+    const dict = translations[currentLang];
+    return dict ? getNestedValue(dict, key) : null;
+}
+
+export { applyTranslations, initLangSwitcher, getCurrentLang, loadLanguage, translate };

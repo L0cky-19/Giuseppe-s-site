@@ -106,7 +106,8 @@ function setActiveNav() {
     const currentPath = window.location.pathname;
     document.querySelectorAll('.nav-links a, .mobile-nav a, .nav-dropdown-menu a').forEach(link => {
         const href = link.getAttribute('href');
-        if (href && currentPath.endsWith(href.replace('./', '').replace('../', ''))) {
+        const normalized = href ? href.replace('./', '').replace('../', '') : '';
+        if (normalized && !normalized.startsWith('#') && currentPath.endsWith(normalized)) {
             link.classList.add('active');
         }
     });
@@ -147,10 +148,127 @@ function initScrollSpy() {
                 }
             });
         },
-        { threshold: 0.4, rootMargin: '0px 0px -20% 0px' }
+        { threshold: 0.15, rootMargin: '0px 0px -25% 0px' }
     );
 
     sections.forEach(section => observer.observe(section));
+}
+
+/**
+ * Dynamic portfolio gallery – Fame photos first, then general
+ */
+function initPortfolioGallery() {
+    const grid = document.getElementById('portfolio-grid');
+    const showMoreWrap = document.getElementById('portfolio-show-more');
+    const showMoreBtn = document.getElementById('portfolio-more-btn');
+    if (!grid || !showMoreWrap || !showMoreBtn) return;
+
+    // Fame photos (celebrity photos – displayed first)
+    const famePhotos = [
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (2).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (3).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (4).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (5).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.26 (6).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (2).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (3).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (4).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (5).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.27 (6).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.49.28.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.07.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.07 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.08.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.08 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.09.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.09 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.09 (2).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.09 (3).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 19.56.09 (4).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 20.00.16.jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 20.00.16 (1).jpeg',
+        'Fame/WhatsApp Image 2026-04-19 at 20.00.16 (2).jpeg',
+    ];
+
+    // General portfolio photos
+    const generalPhotos = [
+        'DSC00309.JPG',
+        'DSC00374.JPG',
+        'DSC00464.JPG',
+        'DSC00847.JPG',
+        'IMG_0067.jpeg',
+        'IMG_0077.jpeg',
+        'IMG_0126.jpeg',
+        'IMG_3831.jpeg',
+        'IMG_3834.jpeg',
+        'IMG_3903.jpeg',
+        'IMG_3904.jpeg',
+        'IMG_4541.jpg',
+        'IMG_5024.jpeg',
+        'IMG_5338 2.jpeg',
+        'IMG_5444.jpeg',
+        'A11D1152-A6A9-4500-9005-2B8BE13C9D2C.JPG',
+        'AF39D633-50B7-4F05-8C0F-93DB768FAD52.JPG',
+        '47a3f173-4f25-4e33-89a5-82b81a0d6fa6.JPG',
+        '83fa0ed7-6209-4f9b-b0f9-10415b2ea98e.jpg',
+        '9d570667-4888-460b-b02f-21e0165675e9.jpg',
+        'IMG_0038.jpeg',
+        'IMG_3478.jpeg',
+        'IMG_0090.JPG',
+        'IMG_3902.jpeg',
+        'IMG_4245.jpeg',
+    ];
+
+    // Combine: Fame first, then general
+    const allPhotos = [...famePhotos, ...generalPhotos];
+    const BATCH_SIZE = 9;
+    let currentIndex = 0;
+
+    function loadBatch() {
+        const end = Math.min(currentIndex + BATCH_SIZE, allPhotos.length);
+        for (let i = currentIndex; i < end; i++) {
+            const div = document.createElement('div');
+            div.className = 'gallery-item fade-in';
+            const img = document.createElement('img');
+            img.src = (import.meta.env?.BASE_URL ?? '/') + 'assets/photos/' + allPhotos[i];
+            img.alt = 'Portfolio ' + (i + 1);
+            img.loading = 'lazy';
+            div.appendChild(img);
+            grid.appendChild(div);
+        }
+        currentIndex = end;
+
+        // Update show-more button visibility
+        showMoreWrap.style.display = currentIndex >= allPhotos.length ? 'none' : '';
+
+        // Re-apply scroll animations to new items
+        const newItems = grid.querySelectorAll('.fade-in:not(.visible)');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+        );
+        newItems.forEach(el => observer.observe(el));
+    }
+
+    // Initial load
+    loadBatch();
+
+    // Show more button
+    showMoreBtn.addEventListener('click', () => {
+        loadBatch();
+    });
+
 }
 
 /**
@@ -166,6 +284,7 @@ function init() {
     setActiveNav();
     initScrollSpy();
     applyTranslations();
+    initPortfolioGallery();
 }
 
 // Run on DOM ready
@@ -176,3 +295,4 @@ if (document.readyState === 'loading') {
 }
 
 export { init };
+

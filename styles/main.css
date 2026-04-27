@@ -605,6 +605,8 @@ p {
   inset: 0;
   background-size: cover;
   background-position: center;
+  transform: none;
+  transition: none;
 }
 
 .page-hero .hero-overlay {
@@ -859,9 +861,49 @@ p {
   opacity: 1;
 }
 
+/* Portfolio Show More */
+.portfolio-show-more {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.portfolio-more-btn {
+  background: transparent;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-gold);
+  transition: all var(--transition-base);
+}
+
+.portfolio-more-btn:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+  transform: translateY(-2px);
+}
+
+.portfolio-more-btn svg {
+  transition: transform var(--transition-base);
+}
+
+.portfolio-more-btn:hover svg {
+  transform: translateY(3px);
+}
+
 /* ── Service Page Content ── */
 .service-content {
   padding: var(--section-padding) 0;
+  animation: contentReveal 0.7s ease both;
+}
+
+@keyframes contentReveal {
+  0%, 45% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .service-content .container--narrow {

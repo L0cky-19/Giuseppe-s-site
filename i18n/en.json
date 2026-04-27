@@ -274,7 +274,8 @@
     "portfolio": {
         "label": "Portfolio",
         "title": "Our Work",
-        "subtitle": "A selection of our finest work for the clientele of Monte-Carlo"
+        "subtitle": "A selection of our finest work for the clientele of Monte-Carlo",
+        "show_more": "Show more"
     },
     "cta": {
         "title": "Book Your Appointment",

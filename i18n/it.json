@@ -274,7 +274,8 @@
     "portfolio": {
         "label": "Portfolio",
         "title": "I Nostri Lavori",
-        "subtitle": "Una selezione dei nostri migliori lavori per la clientela di Monte-Carlo"
+        "subtitle": "Una selezione dei nostri migliori lavori per la clientela di Monte-Carlo",
+        "show_more": "Mostra di più"
     },
     "cta": {
         "title": "Prenota il Tuo Appuntamento",
