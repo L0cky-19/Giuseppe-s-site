@@ -234,7 +234,7 @@ function initPortfolioGallery() {
             const div = document.createElement('div');
             div.className = 'gallery-item fade-in';
             const img = document.createElement('img');
-            img.src = (import.meta.env?.BASE_URL ?? '/') + 'assets/photos/' + allPhotos[i];
+            img.src = './assets/photos/' + allPhotos[i];
             img.alt = 'Portfolio ' + (i + 1);
             img.loading = 'lazy';
             div.appendChild(img);

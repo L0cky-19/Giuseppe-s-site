@@ -11,8 +11,7 @@ let currentLang = localStorage.getItem('gb-lang') || 'it';
 async function loadLanguage(lang) {
     if (translations[lang]) return translations[lang];
     try {
-        const basePath = import.meta.env?.BASE_URL ?? '/';
-        const res = await fetch(`${basePath}i18n/${lang}.json`);
+        const res = await fetch(`./i18n/${lang}.json`);
         translations[lang] = await res.json();
         return translations[lang];
     } catch (e) {
